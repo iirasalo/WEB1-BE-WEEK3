@@ -12,9 +12,9 @@ app.get('/api/users', (req, res) => {
     res.status(200).json({ success: true, data: users });
 });
 
-app.get('/api/users', (req, res) => {
-    res.status(200).json(users);
-  });
+// app.get('/api/users', (req, res) => {
+//   res.status(200).json(users);
+//});
 
   app.get('/api/users/:id', (req, res) => {
     const { id } = req.params;

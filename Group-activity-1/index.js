@@ -1,6 +1,8 @@
 let numbers = [1, 2, 3, 4, 5];
 console.log(numbers.find((e) => e % 2 == 0));
 
+//////////////////////////////////
+
 let customers = [
     {
       name: 'ABC Inc',
@@ -21,6 +23,12 @@ let customers = [
   }
   console.log(customers.find(cb));
 
+//OR:
+//console.log(customers.find((e) => e.credit > 100));
+
+
+//////////////////////////////////////
+
   let cities = [
     { name: 'Los Angeles', population: 3792621 },
     { name: 'New York', population: 8175133 },
@@ -33,6 +41,11 @@ let customers = [
     return cities.population > 3000000;
   }
   console.log(cities.filter(bigCities));
+
+  //OR:
+  // let bigCities = cities
+  //.filter((e) => e.population > 3_000_000);
+  //console.log(bigCities);
 
 let odd = [1, 3, 5];
 let even = [2, 4, 6];
